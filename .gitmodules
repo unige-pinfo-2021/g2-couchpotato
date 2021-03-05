@@ -1,0 +1,6 @@
+[submodule "couchpotato-backend"]
+	path = couchpotato-backend
+	url = git@github.com:UnigePInfo-CouchPotato/couchpotato-backend.git
+[submodule "couchpotato-frontend"]
+	path = couchpotato-frontend
+	url = git@github.com:UnigePInfo-CouchPotato/couchpotato-frontend.git
