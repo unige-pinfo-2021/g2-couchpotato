@@ -1,0 +1,50 @@
+#gravity: 2
+
+[User
+	|
+    id;
+    username;
+    password;
+    email
+    |
+    login();
+    register();
+    logout();
+    selectPreferences();
+    selectMood();
+    joinRoom();
+    createRoom();
+    closeRoom();
+    provideFeedback()
+]
+
+[Room | id | decideMovie()]
+
+[Movie
+	|
+    id;
+    url;
+    name;
+    rating;
+    platform
+]
+
+[Genre
+	|
+    name
+]
+
+[Genre] +-> [Movie]
+
+[User] 3..* o-> * [Genre]
+
+[User] * o-> 1 [Room]
+
+
+
+
+
+
+
+
+
