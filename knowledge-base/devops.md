@@ -4,9 +4,11 @@
 
 <details>
 <summary>Knowledge Template</summary>
+
 ## (Knowledge Name)
 
 (Knowledge Date)
+
 (Submitter Name)
 
 ### Knowledge
