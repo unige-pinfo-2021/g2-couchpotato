@@ -1,5 +1,6 @@
 #gravity: 2
 
+
 [User
 	|
     id;
@@ -10,11 +11,12 @@
     login();
     register();
     logout();
-    selectPreferences();
     selectMood();
+    selectPreferences();
     joinRoom();
     createRoom();
     closeRoom();
+    voteRecommendation();
     provideFeedback()
 ]
 
@@ -25,20 +27,28 @@
     id;
     url;
     name;
-    rating;
-    platform
+    rating
 ]
+
+[Recommendation]
 
 [Genre
 	|
     name
 ]
 
+[Room] 1 <-o 10..* [Recommendation]
+
 [Genre] +-> [Movie]
 
 [User] 3..* o-> * [Genre]
 
 [User] * o-> 1 [Room]
+
+[Recommendation] -:> [Movie]
+
+
+
 
 
 
